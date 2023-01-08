@@ -6,10 +6,10 @@ set -o pipefail
 apt-get update
 
 # Install Python3.7 
-$PWD/install-python.sh
+$(pwd)install-python.sh
 
 # Install Bazel 
-$PWD/install-bazel.sh
+$(pwd)install-bazel.sh
 
 apt install -y git
 
