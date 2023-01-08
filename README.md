@@ -9,8 +9,9 @@
 ## Quick Setup
 ```shell
 
-docker run --name=tf -v /tmp/tensorflow1.15-ubuntu20.04-gpu:/tf -it ubuntu:20.04 /bin/bash
-./tf/build.sh
+docker run --rm -v /tmp/tensorflow1.15-ubuntu20.04-gpu:/builder -it ubuntu:20.04 /bin/bash
+
+/builder/build.sh
 
 ```
 

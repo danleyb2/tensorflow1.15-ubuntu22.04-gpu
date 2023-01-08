@@ -1,10 +1,20 @@
 # Python 3.7
 
+apt -y install zlib1g-dev \
+    libncurses5-dev \
+    libgdbm-dev \
+    libnss3-dev \
+    libssl-dev \
+    libsqlite3-dev \
+    libreadline-dev \
+    libffi-dev \
+    libbz2-dev
+
 cd /tmp/
 
-apt-get install wget build-essential 
+apt -y install wget build-essential 
 
-wget https://www.python.org/ftp/python/3.7.13/Python-3.7.13.tar.xz
+wget -O /tmp/Python-3.7.13.tar.xz https://www.python.org/ftp/python/3.7.13/Python-3.7.13.tar.xz
 
 apt-get install xz-utils
 tar -xf Python-3.7.13.tar.xz

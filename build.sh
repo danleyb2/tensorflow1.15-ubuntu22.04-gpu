@@ -1,6 +1,9 @@
-apt-get update
+#!/usr/bin/env bash
 
-apt install zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libsqlite3-dev libreadline-dev libffi-dev libbz2-dev git -y
+set -e
+set -o pipefail
+
+apt-get update
 
 
 # Install Python3.7 
@@ -10,6 +13,7 @@ apt install zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libsql
 # Install Bazel 
 ./install-bazel.sh
 
+apt install -y git
 # Clone Tensorflow
 git clone https://github.com/tensorflow/tensorflow
 
