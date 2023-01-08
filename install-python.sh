@@ -29,5 +29,8 @@ make install
 
 ldconfig /usr/local/lib 
 
+ln -s python3 /usr/local/bin/python
+ln -s pip3 /usr/local/bin/pip
+
 cd -
 rm -r Python-3.7.13/
