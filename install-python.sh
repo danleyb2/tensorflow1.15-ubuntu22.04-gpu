@@ -1,5 +1,8 @@
+# Python 3.7
 
 cd /tmp/
+
+apt-get install wget build-essential 
 
 wget https://www.python.org/ftp/python/3.7.13/Python-3.7.13.tar.xz
 
