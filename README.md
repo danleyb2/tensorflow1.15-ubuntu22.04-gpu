@@ -1,4 +1,4 @@
-# TensorFlow1.15 Ubuntu20.04 GPU
+# TensorFlow1.15 Ubuntu22.04 GPU
 - Tensorflow 1.15.5
 - Python 3.7 
 - Ubuntu 20.04
@@ -9,7 +9,7 @@
 ## Quick Setup
 ```shell
 
-docker run --rm -v /tmp/tensorflow1.15-ubuntu20.04-gpu:/builder -it ubuntu:20.04 /bin/bash
+docker run --rm -v /tmp/tensorflow1.15-ubuntu22.04-gpu:/builder -it ubuntu:22.04 /bin/bash
 
 /builder/build.sh
 
