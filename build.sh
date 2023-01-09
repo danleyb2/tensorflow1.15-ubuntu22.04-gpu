@@ -14,11 +14,14 @@ apt-get update
 apt install -y git
 
 # Clone Tensorflow
-# git clone https://github.com/tensorflow/tensorflow
+echo "[*] Cloning TensorFlow v1.15.5"
+git clone --depth 1 --branch v1.15.5 https://github.com/tensorflow/tensorflow
 
 # checkout v1.15.5
 # cd tensorflow
 # git checkout v1.15.5
+
+echo "[*] Install the TensorFlow pip package dependencies"
 
 pip install -U pip numpy wheel packaging requests opt_einsum
 pip install -U keras_preprocessing --no-deps
