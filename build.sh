@@ -25,6 +25,7 @@ pip install -U keras_preprocessing --no-deps
 
 
 # TODO Install GPU requirements
+echo "[*] Install CUDA"
 wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-ubuntu2204.pin
 mv cuda-ubuntu2204.pin /etc/apt/preferences.d/cuda-repository-pin-600
 
@@ -37,7 +38,7 @@ apt-get update
 apt-get -y install cuda
 
 
-
+echo "[*] Install cuDNN"
 dpkg -i /builder/cudnn-local-repo-ubuntu2204-8.7.0.84_1.0-1_amd64.deb
 cp /var/cudnn-local-repo-ubuntu2204-8.7.0.84/cudnn-local-BF23AD8A-keyring.gpg /usr/share/keyrings/
 apt-get update
