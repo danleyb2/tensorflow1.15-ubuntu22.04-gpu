@@ -7,11 +7,18 @@
 
 
 ## Quick Setup
+
+Start container
 ```shell
 
-docker run --rm -v /tmp/tensorflow1.15-ubuntu22.04-gpu:/builder -it ubuntu:22.04 /bin/bash
-docker run --gpus all --name=tf -it -v /nvme/home/danleyb2/Desktop/tensorflow1.15-ubuntu20.04-gpu:/builder ubuntu:22.04 /bin/bash
-/builder/build.sh
+docker run --rm -v /tmp/tensorflow1.15-ubuntu22.04-gpu:/builder -it nvidia/cuda:11.8.0-devel-ubuntu22.04 /bin/bash
+docker run --gpus all --name=tf -it -v /nvme/home/danleyb2/Desktop/tensorflow1.15-ubuntu20.04-gpu:/builder nvidia/cuda:11.8.0-devel-ubuntu22.04 /bin/bash
 
+```
+
+Inside Container
+```bash
+
+/builder/build.sh
 ```
 
