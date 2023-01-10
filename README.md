@@ -13,4 +13,4 @@ Build image
 docker build -t platerecognizer/alpr-gpu:base .
 ```
 
-> You could also mnually run the builder container with `--gpus all` on the default(`runc`) runtime then copy the TensorFlow wheel into the release image.
+If you don't wan't to change the default runtime, manually run the builder image with `--gpus all` on the default(`runc`) runtime, build the TensorFlow wheel then copy it into the release image.
