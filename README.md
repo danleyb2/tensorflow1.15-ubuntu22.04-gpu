@@ -6,9 +6,11 @@
 - CUDNN 8
 
 ## Build Image
-First make `nvidia` the default Docker runtime https://stackoverflow.com/a/61737404
+First [make](https://stackoverflow.com/a/61737404) `nvidia` the default Docker runtime instead of the default `runc`
 
 Build image
 ```shell
 docker build -t platerecognizer/alpr-gpu:base .
 ```
+
+> You could also mnually run the builder container with `--gpus all` on the default(`runc`) runtime then copy the TensorFlow wheel into the release image.
