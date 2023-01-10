@@ -6,6 +6,9 @@
 - CUDNN 8
 
 ## Build Image
+First make `nvidia` the default Docker runtime https://stackoverflow.com/a/61737404
+
+Build image
 ```shell
 docker build -t platerecognizer/alpr-gpu:base .
 ```
